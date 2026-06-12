@@ -234,19 +234,3 @@ if (missionsScroll && missionCards.length > 0) {
     card.addEventListener("blur", hideDetail);
   });
 }
-
-const contactForm = document.querySelector<HTMLFormElement>("#contact-form");
-const formStatus = document.querySelector<HTMLElement>("#form-status");
-
-contactForm?.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  if (!contactForm.checkValidity()) {
-    contactForm.reportValidity();
-    return;
-  }
-
-  contactForm.reset();
-  formStatus?.removeAttribute("hidden");
-  formStatus?.focus();
-});
