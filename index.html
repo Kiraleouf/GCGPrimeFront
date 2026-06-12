@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GCG Prime | Développement backend & architecture logicielle</title>
+    <meta
+      name="description"
+      content="GCG Prime accompagne les entreprises dans leurs projets backend, architecture logicielle, APIs REST, microservices, Kafka, cloud, performance et scalabilité."
+    />
+    <meta name="theme-color" content="#020617" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://gcgprime.fr/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gcgprime.fr/" />
+    <meta property="og:title" content="GCG Prime | Développement backend & architecture logicielle" />
+    <meta
+      property="og:description"
+      content="Conseil senior Java, Kotlin, Spring Boot, APIs REST, microservices, Kafka, cloud, architecture logicielle, performance et scalabilité."
+    />
+    <meta property="og:site_name" content="GCG Prime" />
+    <meta property="og:image" content="https://gcgprime.fr/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body class="font-sans text-slate-50">
+    <a
+      href="#contenu"
+      class="focus-ring fixed left-4 top-4 z-50 -translate-y-20 rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition focus:translate-y-0"
+    >
+      Aller au contenu
+    </a>
+
+    <header class="fixed inset-x-0 top-0 z-40 border-b border-slate-800/70 bg-ink-950/78 backdrop-blur-xl">
+      <nav class="container-shell flex h-16 items-center justify-between" aria-label="Navigation principale">
+        <a href="#" class="focus-ring flex items-center gap-3 rounded-md" aria-label="GCG Prime, accueil">
+          <span class="grid h-9 w-9 place-items-center rounded-md border border-blue-400/45 bg-blue-500/10 shadow-glow">
+            <svg class="h-5 w-5 text-cyan-300" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.8 20 7.4v9.2l-8 4.6-8-4.6V7.4l8-4.6Z" fill="none" stroke="currentColor" stroke-width="1.7" />
+              <path d="M12 7.1 16.2 9.5v4.9L12 16.9l-4.2-2.5V9.5L12 7.1Z" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".8" />
+            </svg>
+          </span>
+          <span class="text-sm font-bold uppercase tracking-[0.14em] text-white">GCG Prime</span>
+        </a>
+
+        <div class="hidden items-center gap-8 text-sm font-medium text-slate-300 md:flex">
+          <a class="focus-ring rounded-md transition hover:text-white" href="#expertise">Expertise</a>
+          <a class="focus-ring rounded-md transition hover:text-white" href="#technologies">Technologies</a>
+          <a class="focus-ring rounded-md transition hover:text-white" href="#processus">Valeur ajoutée</a>
+          <a class="focus-ring rounded-md transition hover:text-white" href="#parcours">Parcours</a>
+          <a class="focus-ring rounded-md transition hover:text-white" href="#apropos">À propos</a>
+          <a class="focus-ring rounded-md transition hover:text-white" href="#contact">Contact</a>
+        </div>
+
+        <a
+          href="#contact"
+          class="focus-ring rounded-md border border-blue-400/50 px-4 py-2 text-sm font-semibold text-blue-100 transition hover:border-blue-300 hover:bg-blue-500/12"
+        >
+          Me contacter
+        </a>
+      </nav>
+    </header>
+
+    <main id="contenu">
+      <section class="hero-scene relative overflow-hidden pb-16 pt-32 sm:pb-20 lg:min-h-[760px] lg:pb-24 lg:pt-36" data-parallax-root>
+        <div class="hero-layer hero-layer-grid" data-depth="0.16" aria-hidden="true"></div>
+        <div class="hero-layer hero-layer-glow hero-layer-glow-a" data-depth="0.34" aria-hidden="true"></div>
+        <div class="hero-layer hero-layer-glow hero-layer-glow-b" data-depth="0.22" aria-hidden="true"></div>
+        <div class="container-shell grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] xl:grid-cols-[0.82fr_1.18fr]">
+          <div class="hero-copy relative z-10" data-reveal data-depth="0.08">
+            <h1 class="max-w-3xl text-5xl font-bold leading-[1.02] text-white sm:text-6xl lg:text-7xl">
+              Développement backend & architecture logicielle
+            </h1>
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
+              J'accompagne les entreprises dans la conception et le développement de solutions robustes, performantes et évolutives.
+            </p>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="#contact"
+                class="focus-ring inline-flex items-center justify-center rounded-md bg-blue-600 px-6 py-3 text-sm font-bold text-white shadow-glow transition hover:bg-blue-500"
+              >
+                Me contacter
+              </a>
+              <a
+                href="#expertise"
+                class="focus-ring inline-flex items-center justify-center rounded-md border border-slate-700 bg-slate-950/35 px-6 py-3 text-sm font-bold text-slate-100 transition hover:border-blue-400/60 hover:bg-blue-500/10"
+              >
+                Découvrir mes services
+              </a>
+            </div>
+            <ul class="mt-9 flex flex-wrap gap-2.5 text-sm text-slate-300" aria-label="Technologies principales">
+              <li class="hero-chip">Java</li>
+              <li class="hero-chip">Kotlin</li>
+              <li class="hero-chip">Spring Boot</li>
+              <li class="hero-chip">Kafka</li>
+              <li class="hero-chip">Cloud</li>
+              <li class="hero-chip">Kubernetes</li>
+            </ul>
+          </div>
+
+          <div class="architecture-wrap relative z-10" data-reveal data-depth="0.28">
+            <div class="architecture-shell panel">
+              <div class="architecture-backdrop" data-depth="0.12"></div>
+              <div class="architecture-halo architecture-halo-a" data-depth="0.38"></div>
+              <div class="architecture-halo architecture-halo-b" data-depth="0.26"></div>
+              <svg class="architecture-lines" viewBox="0 0 720 500" fill="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="lineBlue" x1="360" x2="360" y1="70" y2="430" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#60a5fa" stop-opacity=".2" />
+                    <stop offset=".48" stop-color="#22d3ee" stop-opacity=".85" />
+                    <stop offset="1" stop-color="#34d399" stop-opacity=".3" />
+                  </linearGradient>
+                  <filter id="lineGlow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="2.5" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                </defs>
+                <path class="architecture-line line-base" d="M360 88V190" />
+                <path class="architecture-line line-base" d="M360 190V310" />
+                <path class="architecture-line line-base" d="M185 310H535" />
+                <path class="architecture-line line-base" d="M360 310V428" />
+                <path class="architecture-line line-main line-delay-1" d="M360 88V190" />
+                <path class="architecture-line line-main line-delay-2" d="M360 190V310" />
+                <path class="architecture-line line-main line-delay-3" d="M185 310H535" />
+                <path class="architecture-line line-main line-delay-4" d="M360 310V428" />
+                <circle class="architecture-pulse pulse-delay-1" cx="360" cy="190" r="4" />
+                <circle class="architecture-pulse pulse-delay-2" cx="360" cy="310" r="4" />
+                <circle class="architecture-pulse pulse-delay-3" cx="185" cy="310" r="3.5" />
+                <circle class="architecture-pulse pulse-delay-4" cx="535" cy="310" r="3.5" />
+                <circle class="architecture-pulse pulse-delay-1" cx="360" cy="428" r="4" />
+              </svg>
+
+              <div class="architecture-node node-client" data-node>
+                <span class="node-icon node-icon-blue">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm8-1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5ZM3.5 19c.6-3.4 2.1-5.2 4.5-5.2s3.9 1.8 4.5 5.2M13.2 15.1c.7-.7 1.6-1.1 2.8-1.1 2.1 0 3.4 1.5 3.9 4.4" /></svg>
+                </span>
+                <span>Clients</span>
+              </div>
+              <div class="architecture-node node-platform is-primary" data-node>
+                <span class="node-icon node-icon-cyan">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16M8 4v16M16 4v16" /></svg>
+                </span>
+                <span>Backend Platform</span>
+              </div>
+              <div class="architecture-node node-postgres" data-node>
+                <span class="node-icon node-icon-blue">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3" /><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6" /></svg>
+                </span>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="architecture-node node-kafka is-accent" data-node>
+                <span class="node-icon node-icon-green">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="7" r="2.5" /><circle cx="17" cy="7" r="2.5" /><circle cx="12" cy="17" r="2.5" /><path d="m9 8.5 6 0M8.3 9.1 11 15M15.7 9.1 13 15" /></svg>
+                </span>
+                <span>Kafka</span>
+              </div>
+              <div class="architecture-node node-apis" data-node>
+                <span class="node-icon node-icon-cyan">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h5v8H4zM15 8h5v8h-5zM9 12h6" /><path d="M7 5v3M7 16v3M17 5v3M17 16v3" /></svg>
+                </span>
+                <span>APIs</span>
+              </div>
+              <div class="architecture-node node-cloud-k8s is-primary" data-node>
+                <span class="node-icon node-icon-blue">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a4 4 0 0 1 .5-7.96A5.5 5.5 0 0 1 18 11a3.5 3.5 0 0 1-.5 7H7Z" /><path d="m12 11 3 1.8v3.4L12 18l-3-1.8v-3.4L12 11Z" /></svg>
+                </span>
+                <span>Cloud & Kubernetes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="expertise" class="section-band section-band-expertise hairline py-20">
+        <div class="container-shell">
+          <div class="max-w-3xl" data-reveal>
+            <h2 class="text-3xl font-bold text-white sm:text-4xl">Expertise backend, architecture et accompagnement</h2>
+            <p class="mt-4 text-lg leading-8 text-slate-300">
+              J'accompagne les équipes dans le développement, l'évolution et la fiabilisation de plateformes backend critiques.
+            </p>
+          </div>
+
+          <div class="expertise-grid mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            <article class="panel card-premium expertise-card expertise-card-featured rounded-md p-6 transition duration-300 hover:-translate-y-1 hover:border-blue-400/45" data-reveal>
+              <div class="mb-6 grid h-11 w-11 place-items-center rounded-md bg-blue-500/12 text-blue-300">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z" stroke="currentColor" stroke-width="1.7"/><path d="M12 12 4.4 7.8M12 12l7.6-4.2M12 12v8.4" stroke="currentColor" stroke-width="1.7"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-white">Backend</h3>
+              <ul class="mt-4 space-y-2 text-sm leading-6 text-slate-300">
+                <li>Java</li>
+                <li>Kotlin</li>
+                <li>Spring Boot</li>
+                <li>REST API</li>
+                <li>WebFlux</li>
+              </ul>
+            </article>
+
+            <article class="panel card-premium expertise-card rounded-md p-6 transition duration-300 hover:-translate-y-1 hover:border-blue-400/45" data-reveal>
+              <div class="mb-6 grid h-11 w-11 place-items-center rounded-md bg-cyan-500/10 text-cyan-300">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8h6v6H4V8Zm10-5h6v6h-6V3Zm0 12h6v6h-6v-6Z" stroke="currentColor" stroke-width="1.7"/><path d="M10 11h4M17 9v6" stroke="currentColor" stroke-width="1.7"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-white">Architecture</h3>
+              <ul class="mt-4 space-y-2 text-sm leading-6 text-slate-300">
+                <li>Microservices</li>
+                <li>Event Driven</li>
+                <li>DDD</li>
+                <li>Clean Architecture</li>
+              </ul>
+            </article>
+
+            <article class="panel card-premium expertise-card rounded-md p-6 transition duration-300 hover:-translate-y-1 hover:border-blue-400/45" data-reveal>
+              <div class="mb-6 grid h-11 w-11 place-items-center rounded-md bg-emerald-500/10 text-emerald-300">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17a4 4 0 0 1 .5-7.96A5.5 5.5 0 0 1 18 11a3 3 0 0 1-.5 5.96" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M8 17h10M12 13v8M9 18l3 3 3-3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-white">Cloud & DevOps</h3>
+              <ul class="mt-4 space-y-2 text-sm leading-6 text-slate-300">
+                <li>Kubernetes</li>
+                <li>CI/CD</li>
+                <li>Observabilité</li>
+                <li>Monitoring</li>
+              </ul>
+            </article>
+
+            <article class="panel card-premium expertise-card rounded-md p-6 transition duration-300 hover:-translate-y-1 hover:border-blue-400/45" data-reveal>
+              <div class="mb-6 grid h-11 w-11 place-items-center rounded-md bg-blue-500/12 text-blue-300">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 5 6v5c0 4.4 2.8 8.4 7 10 4.2-1.6 7-5.6 7-10V6l-7-3Z" stroke="currentColor" stroke-width="1.7"/><path d="m8.8 12 2.1 2.1 4.5-4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-white">Accompagnement</h3>
+              <ul class="mt-4 space-y-2 text-sm leading-6 text-slate-300">
+                <li>Audit</li>
+                <li>Mentorat</li>
+                <li>Expertise</li>
+                <li>Renfort d'équipe</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band section-band-proof hairline py-20">
+        <div class="container-shell grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
+          <div data-reveal>
+            <h2 class="text-3xl font-bold text-white sm:text-4xl">Pourquoi faire appel à moi</h2>
+            <p class="mt-4 text-lg leading-8 text-slate-300">
+              Derrière GCG Prime, il y a un consultant backend senior qui s'intègre vite, avance avec autonomie et aide les équipes à livrer durablement.
+            </p>
+          </div>
+
+          <div class="proof-grid grid gap-4 sm:grid-cols-2" data-reveal>
+            <div class="panel card-premium proof-card proof-card-large rounded-md p-6">
+              <strong class="block text-4xl font-bold text-white">+10</strong>
+              <span class="mt-2 block text-sm font-semibold text-slate-200">ans d'expérience</span>
+              <p class="mt-3 text-sm leading-6 text-slate-400">J'interviens sur des plateformes backend, des architectures distribuées et des systèmes critiques depuis plus de 10 ans.</p>
+            </div>
+            <div class="panel card-premium proof-card rounded-md p-6">
+              <strong class="block text-4xl font-bold text-white">Senior</strong>
+              <span class="mt-2 block text-sm font-semibold text-slate-200">expertise terrain</span>
+              <p class="mt-3 text-sm leading-6 text-slate-400">Je prends des décisions techniques pragmatiques, adaptées au contexte produit, aux équipes et aux contraintes de production.</p>
+            </div>
+            <div class="panel card-premium proof-card rounded-md p-6">
+              <strong class="block text-4xl font-bold text-white">Autonome</strong>
+              <span class="mt-2 block text-sm font-semibold text-slate-200">intervention rapide</span>
+              <p class="mt-3 text-sm leading-6 text-slate-400">Je peux prendre un sujet en main rapidement, clarifier les risques, proposer une trajectoire et produire de la valeur sans attendre.</p>
+            </div>
+            <div class="panel card-premium proof-card rounded-md p-6">
+              <strong class="block text-4xl font-bold text-white">Grands groupes</strong>
+              <span class="mt-2 block text-sm font-semibold text-slate-200">habitude des environnements exigeants</span>
+              <p class="mt-3 text-sm leading-6 text-slate-400">J'ai l'habitude des organisations complexes, des standards élevés, de la coordination transverse et des enjeux de mise en production.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="technologies" class="section-band section-band-tech hairline py-20">
+        <div class="container-shell">
+          <div class="flex flex-col justify-between gap-5 md:flex-row md:items-end" data-reveal>
+            <div>
+              <h2 class="text-3xl font-bold text-white sm:text-4xl">Technologies maîtrisées</h2>
+              <p class="mt-4 max-w-2xl text-lg leading-8 text-slate-300">
+                Un socle moderne pour construire des APIs, plateformes cloud et architectures distribuées maintenables.
+              </p>
+            </div>
+          </div>
+
+          <div class="tech-groups mt-10 grid gap-5 lg:grid-cols-2" data-reveal>
+            <div class="tech-group panel rounded-md p-4 sm:p-5">
+              <h3 class="tech-group-title">Développement & Architecture</h3>
+              <div class="tech-grid mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                <div class="tech-card panel" aria-label="Java"><img class="tech-icon" src="/icons/devicon/java.svg" alt="" loading="lazy" /><span>Java</span></div>
+                <div class="tech-card panel" aria-label="Kotlin"><img class="tech-icon" src="/icons/devicon/kotlin.svg" alt="" loading="lazy" /><span>Kotlin</span></div>
+                <div class="tech-card panel" aria-label="Spring Boot"><img class="tech-icon" src="/icons/devicon/spring.svg" alt="" loading="lazy" /><span>Spring Boot</span></div>
+                <div class="tech-card panel" aria-label="Kafka"><img class="tech-icon" src="/icons/devicon/apachekafka.svg" alt="" loading="lazy" /><span>Kafka</span></div>
+                <div class="tech-card panel" aria-label="PostgreSQL"><img class="tech-icon" src="/icons/devicon/postgresql.svg" alt="" loading="lazy" /><span>PostgreSQL</span></div>
+              </div>
+            </div>
+
+            <div class="tech-group panel rounded-md p-4 sm:p-5">
+              <h3 class="tech-group-title">Delivery & Plateforme</h3>
+              <div class="tech-grid mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                <div class="tech-card panel" aria-label="GitHub"><img class="tech-icon tech-icon-github" src="/icons/devicon/github.svg" alt="" loading="lazy" /><span>GitHub</span></div>
+                <div class="tech-card panel" aria-label="GitLab"><img class="tech-icon" src="/icons/devicon/gitlab.svg" alt="" loading="lazy" /><span>GitLab</span></div>
+                <div class="tech-card panel" aria-label="CI/CD"><span class="tech-icon cicd-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M10 14h9a7 7 0 0 1 7 7v6a7 7 0 0 0 7 7h5" /><path d="M10 34h9a7 7 0 0 0 7-7v-6a7 7 0 0 1 7-7h5" /><circle cx="10" cy="14" r="4" /><circle cx="10" cy="34" r="4" /><circle cx="38" cy="14" r="4" /><circle cx="38" cy="34" r="4" /><path d="m34 10 4 4-4 4M34 30l4 4-4 4" /></svg></span><span>CI/CD</span></div>
+                <div class="tech-card panel" aria-label="Docker"><img class="tech-icon" src="/icons/devicon/docker.svg" alt="" loading="lazy" /><span>Docker</span></div>
+                <div class="tech-card panel" aria-label="Kubernetes"><img class="tech-icon" src="/icons/devicon/kubernetes.svg" alt="" loading="lazy" /><span>Kubernetes</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="processus" class="section-band section-band-process hairline py-20">
+        <div class="container-shell">
+          <div class="max-w-3xl" data-reveal>
+            <h2 class="text-3xl font-bold text-white sm:text-4xl">Ce que j'apporte aux équipes</h2>
+            <p class="mt-4 text-lg leading-8 text-slate-300">
+              En mission longue durée, je m'intègre dans l'équipe, je prends des sujets en responsabilité et j'aide la plateforme à progresser dans le temps.
+            </p>
+          </div>
+
+          <ol class="process-grid relative mt-12 grid gap-6 lg:grid-cols-5" data-reveal>
+            <li class="panel card-premium process-card relative rounded-md p-6 lg:before:absolute lg:before:left-full lg:before:top-10 lg:before:h-px lg:before:w-6 lg:before:bg-slate-700">
+              <span class="grid h-10 w-10 place-items-center rounded-full border border-blue-400/70 bg-blue-500/15 text-sm font-bold text-blue-100">1</span>
+              <h3 class="mt-5 text-lg font-bold text-white">Compréhension rapide du contexte</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-400">Je comprends rapidement les enjeux métier, les contraintes techniques et l'architecture existante afin de devenir opérationnel en quelques jours.</p>
+            </li>
+            <li class="panel card-premium process-card relative rounded-md p-6 lg:before:absolute lg:before:left-full lg:before:top-10 lg:before:h-px lg:before:w-6 lg:before:bg-slate-700">
+              <span class="grid h-10 w-10 place-items-center rounded-full border border-blue-400/70 bg-blue-500/15 text-sm font-bold text-blue-100">2</span>
+              <h3 class="mt-5 text-lg font-bold text-white">Expertise technique & force de proposition</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-400">Je contribue activement aux choix techniques, à l'architecture et à l'amélioration continue des plateformes avec une approche pragmatique orientée résultats.</p>
+            </li>
+            <li class="panel card-premium process-card relative rounded-md p-6 lg:before:absolute lg:before:left-full lg:before:top-10 lg:before:h-px lg:before:w-6 lg:before:bg-slate-700">
+              <span class="grid h-10 w-10 place-items-center rounded-full border border-blue-400/70 bg-blue-500/15 text-sm font-bold text-blue-100">3</span>
+              <h3 class="mt-5 text-lg font-bold text-white">Delivery & qualité logicielle</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-400">Je développe des fonctionnalités robustes, participe aux revues de code, améliore la qualité logicielle et accompagne les mises en production.</p>
+            </li>
+            <li class="panel card-premium process-card relative rounded-md p-6 lg:before:absolute lg:before:left-full lg:before:top-10 lg:before:h-px lg:before:w-6 lg:before:bg-slate-700">
+              <span class="grid h-10 w-10 place-items-center rounded-full border border-blue-400/70 bg-blue-500/15 text-sm font-bold text-blue-100">4</span>
+              <h3 class="mt-5 text-lg font-bold text-white">Leadership technique</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-400">Je peux prendre un rôle de Lead Developer lorsque nécessaire, coordonner les sujets techniques et aider les équipes à prendre les bonnes décisions.</p>
+            </li>
+            <li class="panel card-premium process-card rounded-md p-6">
+              <span class="grid h-10 w-10 place-items-center rounded-full border border-blue-400/70 bg-blue-500/15 text-sm font-bold text-blue-100">5</span>
+              <h3 class="mt-5 text-lg font-bold text-white">Accompagnement & transmission</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-400">J'accompagne les développeurs juniors, partage mes connaissances, documente les décisions importantes et contribue à la montée en compétence des équipes.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="parcours" class="section-band section-band-missions hairline py-20">
+        <div class="container-shell">
+          <div class="flex flex-col justify-between gap-4 md:flex-row md:items-end" data-reveal>
+            <div class="max-w-3xl">
+              <h2 class="text-3xl font-bold text-white sm:text-4xl">Parcours & missions</h2>
+              <p class="mt-4 text-lg leading-8 text-slate-300">
+                Un parcours backend construit dans le retail, les plateformes mobiles grand public et les systèmes distribués, avec une progression vers des responsabilités de lead developer.
+              </p>
+            </div>
+            <span class="w-fit rounded-md border border-blue-400/35 bg-blue-400/10 px-3 py-2 text-sm font-semibold text-blue-100">
+              2014 → aujourd'hui
+            </span>
+          </div>
+
+          <div class="missions-gantt mt-12" data-reveal>
+            <div class="mission-nav" aria-label="Navigation du parcours">
+              <button class="mission-nav-button" type="button" data-mission-nav="prev" aria-label="Voir les expériences précédentes">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m15 18-6-6 6-6" />
+                </svg>
+              </button>
+              <button class="mission-nav-button" type="button" data-mission-nav="next" aria-label="Voir les expériences récentes">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 6 6 6-6 6" />
+                </svg>
+              </button>
+            </div>
+            <div class="missions-scroll" aria-label="Frise des missions de 2014 à aujourd'hui">
+              <div class="gantt-scale" aria-hidden="true">
+                <span style="--x: 0">2014</span>
+                <span style="--x: 0.182">2016</span>
+                <span style="--x: 0.349">2018</span>
+                <span style="--x: 0.517">2020</span>
+                <span style="--x: 0.685">2022</span>
+                <span style="--x: 0.853">2024</span>
+                <span style="--x: 1">Aujourd'hui</span>
+              </div>
+
+              <div class="gantt-board">
+                <article class="mission-card card-premium brand-decathlon" style="--left: 0; --width: 0.145; --lane: 0" tabindex="0">
+                  <div class="mission-card-main">
+                    <span class="mission-logo">DEC</span>
+                    <span>
+                      <strong>Decathlon</strong>
+                      <small>1,9 an</small>
+                    </span>
+                  </div>
+                  <div class="mission-detail">
+                    <p class="mission-role">Développeur Java Android</p>
+                    <p class="mission-period">juillet 2014 - mai 2016</p>
+                    <p>Applications Android natives pour bornes interactives en magasin, déployées à l'international, avec optimisation performance, mémoire et gestion de parc terminaux.</p>
+                    <ul>
+                      <li>Android</li>
+                      <li>Java</li>
+                      <li>RxJava</li>
+                      <li>Realm</li>
+                      <li>Retrofit</li>
+                      <li>MVP</li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="mission-card card-premium brand-niji" style="--left: 0.155; --width: 0.095; --lane: 1" tabindex="0">
+                  <div class="mission-card-main">
+                    <span class="mission-logo">NIJI</span>
+                    <span>
+                      <strong>Niji</strong>
+                      <small>1,3 an</small>
+                    </span>
+                  </div>
+                  <div class="mission-detail">
+                    <p class="mission-role">Ingénieur solutions</p>
+                    <p class="mission-period">juin 2016 - octobre 2017</p>
+                    <p>Projets variés en Digital Software Factory : refonte mobile, back offices Node.js, frontends web, intégration continue et contribution backend Spring pour un projet logistique.</p>
+                    <ul>
+                      <li>Android</li>
+                      <li>Node.js</li>
+                      <li>AngularJS</li>
+                      <li>Docker</li>
+                      <li>Spring</li>
+                      <li>RxJava</li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="mission-card card-premium brand-decathlon" style="--left: 0.265; --width: 0.165; --lane: 2" tabindex="0">
+                  <div class="mission-card-main">
+                    <span class="mission-logo">DEC</span>
+                    <span>
+                      <strong>Decathlon France</strong>
+                      <small>2,1 ans</small>
+                    </span>
+                  </div>
+                  <div class="mission-detail">
+                    <p class="mission-role">Ingénieur R&D</p>
+                    <p class="mission-period">octobre 2017 - octobre 2019</p>
+                    <p>Prototypes innovants mêlant hardware et software, applications Android natives, backends et API REST déployées sur AWS, avec expérimentation autour de la réalité augmentée.</p>
+                    <ul>
+                      <li>Kotlin</li>
+                      <li>Java</li>
+                      <li>Node.js</li>
+                      <li>Python</li>
+                      <li>AWS</li>
+                      <li>C/C++</li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="mission-card card-premium brand-cgi" style="--left: 0.445; --width: 0.07; --lane: 3" tabindex="0">
+                  <div class="mission-card-main">
+                    <span class="mission-logo">CGI</span>
+                    <span>
+                      <strong>CGI</strong>
+                      <small>10 mois</small>
+                    </span>
+                  </div>
+                  <div class="mission-detail">
+                    <p class="mission-role">Expert technique Java</p>
+                    <p class="mission-period">octobre 2019 - août 2020</p>
+                    <p>Développement backend Java / Spring avec intégration de messaging, recherche Elasticsearch/Kibana, outils internes d'automatisation et mise en place d'un fonctionnement agile.</p>
+                    <ul>
+                      <li>Java 8</li>
+                      <li>Spring 4</li>
+                      <li>Kafka</li>
+                      <li>ActiveMQ</li>
+                      <li>Elasticsearch</li>
+                      <li>Docker</li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="mission-card card-premium brand-adeo" style="--left: 0.53; --width: 0.2; --lane: 4" tabindex="0">
+                  <div class="mission-card-main">
+                    <span class="mission-logo">LM</span>
+                    <span>
+                      <strong>Leroy Merlin</strong>
+                      <small>2,5 ans</small>
+                    </span>
+                  </div>
+                  <div class="mission-detail">
+                    <p class="mission-role">Ingénieur SI</p>
+                    <p class="mission-period">août 2020 - février 2023</p>
+                    <p>Backend et DevOps sur l'application mobile grand public : services Java / Spring REST et réactifs, qualité logicielle, migration CI vers GitHub Actions et documentation technique.</p>
+                    <ul>
+                      <li>Java</li>
+                      <li>Spring</li>
+                      <li>REST</li>
+                      <li>GitHub Actions</li>
+                      <li>GitLab CI</li>
+                      <li>Sonar</li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="mission-card card-premium brand-adeo" style="--left: 0.745; --width: 0.205; --lane: 5" tabindex="0">
+                  <div class="mission-card-main">
+                    <span class="mission-logo">AD</span>
+                    <span>
+                      <strong>ADEO</strong>
+                      <small>2,9 ans</small>
+                    </span>
+                  </div>
+                  <div class="mission-detail">
+                    <p class="mission-role">Ingénieur logiciel senior & lead dev</p>
+                    <p class="mission-period">février 2023 - décembre 2025</p>
+                    <p>Lead developer sur des applications internes de gestion des stocks : microservices Java / Spring, pratiques TDD/BDD, pipeline de tests end-to-end et accompagnement des développeurs.</p>
+                    <ul>
+                      <li>Java</li>
+                      <li>Spring</li>
+                      <li>Microservices</li>
+                      <li>Kafka</li>
+                      <li>Postgres</li>
+                      <li>TDD</li>
+                      <li>BDD</li>
+                      <li>Cucumber</li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="mission-card card-premium brand-auchan" style="--left: 0.965; --width: 0.035; --lane: 6" tabindex="0">
+                  <div class="mission-card-main">
+                    <span class="mission-logo">AU</span>
+                    <span>
+                      <strong>Auchan</strong>
+                      <small>2026 → Aujourd'hui</small>
+                    </span>
+                  </div>
+                  <div class="mission-detail">
+                    <p class="mission-role">Développeur backend senior</p>
+                    <p class="mission-period">décembre 2025 - aujourd'hui</p>
+                    <p>Contribution au backend de l'application mobile Auchan : services Kotlin / Spring, robustesse, performance, scalabilité, CI/CD, incidents production et dette technique.</p>
+                    <ul>
+                      <li>Java</li>
+                      <li>Spring</li>
+                      <li>CI/CD</li>
+                      <li>Performance</li>
+                      <li>Scalabilité</li>
+                      <li>Production</li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+              <div class="mission-floating-detail" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="apropos" class="section-band section-band-about hairline py-20">
+        <div class="container-shell grid gap-10 lg:grid-cols-[0.86fr_1fr] lg:items-center">
+          <div class="panel founder-panel founder-photo-panel relative min-h-[390px] overflow-hidden rounded-md" data-reveal>
+            <img class="founder-photo" src="/img/photo.png" alt="Portrait du fondateur de GCG Prime" />
+          </div>
+
+          <div data-reveal>
+            <h2 class="text-3xl font-bold text-white sm:text-4xl">À propos du fondateur</h2>
+            <div class="mt-6 space-y-5 text-lg leading-8 text-slate-300">
+              <p>
+                GCG Prime est portée par un consultant senior spécialisé dans le développement backend et l'architecture logicielle, avec plus de 10 ans d'expérience.
+              </p>
+              <p>
+                Les missions menées dans de grands groupes ont forgé une approche exigeante : comprendre le métier, livrer du code fiable, documenter les décisions et aider les équipes à monter en qualité.
+              </p>
+              <p>
+                La passion du développement logiciel se traduit par une pratique pragmatique, tournée vers les résultats, la maintenabilité et la performance long terme.
+              </p>
+            </div>
+            <div class="mt-8 grid gap-4 sm:grid-cols-2">
+              <div class="mini-panel rounded-md border border-slate-800 bg-slate-950/45 p-4">
+                <strong class="block text-sm text-white">Approche</strong>
+                <span class="mt-2 block text-sm leading-6 text-slate-400">Pragmatique, autonome, transparente.</span>
+              </div>
+              <div class="mini-panel rounded-md border border-slate-800 bg-slate-950/45 p-4">
+                <strong class="block text-sm text-white">Interventions</strong>
+                <span class="mt-2 block text-sm leading-6 text-slate-400">Audit, architecture, renfort d'équipe, delivery.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-band section-band-contact hairline py-20">
+        <div class="container-shell grid gap-10 lg:grid-cols-[0.68fr_1fr] xl:grid-cols-[0.58fr_1.05fr]">
+          <div data-reveal>
+            <h2 class="text-3xl font-bold text-white sm:text-4xl">Discutons de votre projet</h2>
+            <p class="mt-4 text-lg leading-8 text-slate-300">
+              Un besoin d'architecture, de renfort backend ou d'audit technique ? Envoyez quelques éléments de contexte.
+            </p>
+            <dl class="mt-8 space-y-4 text-sm text-slate-300">
+              <div class="flex gap-3">
+                <dt class="font-semibold text-white">Email</dt>
+                <dd><a class="focus-ring rounded-md text-blue-300 hover:text-blue-200" href="mailto:contact@gcgprime.fr">contact@gcgprime.fr</a></dd>
+              </div>
+              <div class="flex gap-3">
+                <dt class="font-semibold text-white">LinkedIn</dt>
+                <dd><a class="focus-ring rounded-md text-blue-300 hover:text-blue-200" href="https://www.linkedin.com/" rel="noreferrer">Profil LinkedIn</a></dd>
+              </div>
+              <div class="flex gap-3">
+                <dt class="font-semibold text-white">Disponibilité</dt>
+                <dd>Ouvert aux missions freelance, conseil et renfort d'équipe.</dd>
+              </div>
+            </dl>
+          </div>
+
+          <form id="contact-form" class="panel contact-panel rounded-md p-5 sm:p-7" data-reveal>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <label class="block">
+                <span class="text-sm font-semibold text-slate-200">Nom</span>
+                <input class="mt-2 w-full rounded-md border-slate-700 bg-slate-950/65 text-slate-50 placeholder:text-slate-500 focus:border-blue-400 focus:ring-blue-400" name="name" autocomplete="name" required />
+              </label>
+              <label class="block">
+                <span class="text-sm font-semibold text-slate-200">Email</span>
+                <input class="mt-2 w-full rounded-md border-slate-700 bg-slate-950/65 text-slate-50 placeholder:text-slate-500 focus:border-blue-400 focus:ring-blue-400" name="email" type="email" autocomplete="email" required />
+              </label>
+              <label class="block sm:col-span-2">
+                <span class="text-sm font-semibold text-slate-200">Société</span>
+                <input class="mt-2 w-full rounded-md border-slate-700 bg-slate-950/65 text-slate-50 placeholder:text-slate-500 focus:border-blue-400 focus:ring-blue-400" name="company" autocomplete="organization" />
+              </label>
+              <label class="block sm:col-span-2">
+                <span class="text-sm font-semibold text-slate-200">Message</span>
+                <textarea class="mt-2 min-h-36 w-full rounded-md border-slate-700 bg-slate-950/65 text-slate-50 placeholder:text-slate-500 focus:border-blue-400 focus:ring-blue-400" name="message" placeholder="Décrivez votre contexte, vos contraintes et vos objectifs..." required></textarea>
+              </label>
+            </div>
+            <div class="mt-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <button class="focus-ring rounded-md bg-blue-600 px-5 py-3 text-sm font-bold text-white transition hover:bg-blue-500" type="submit">
+                Envoyer le message
+              </button>
+              <p class="text-xs leading-5 text-slate-500">Formulaire statique. Aucune donnée n'est envoyée à un serveur.</p>
+            </div>
+            <p id="form-status" tabindex="-1" hidden class="mt-4 rounded-md border border-emerald-400/35 bg-emerald-400/10 px-4 py-3 text-sm text-emerald-200">
+              Message préparé côté interface. Contactez GCG Prime par email pour l'envoi réel.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-800/80 py-10">
+      <div class="container-shell grid gap-8 md:grid-cols-[1.2fr_0.7fr_0.7fr_0.7fr]">
+        <div>
+          <a href="#" class="focus-ring inline-flex items-center gap-3 rounded-md" aria-label="GCG Prime, accueil">
+            <span class="grid h-9 w-9 place-items-center rounded-md border border-blue-400/45 bg-blue-500/10">
+              <svg class="h-5 w-5 text-cyan-300" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2.8 20 7.4v9.2l-8 4.6-8-4.6V7.4l8-4.6Z" fill="none" stroke="currentColor" stroke-width="1.7" />
+              </svg>
+            </span>
+            <span class="text-sm font-bold uppercase tracking-[0.14em] text-white">GCG Prime</span>
+          </a>
+          <p class="mt-4 max-w-sm text-sm leading-6 text-slate-400">
+            Développement backend, architecture logicielle et conseil technique pour systèmes robustes.
+          </p>
+        </div>
+        <div>
+          <h2 class="text-sm font-bold text-white">Navigation</h2>
+          <ul class="mt-4 space-y-2 text-sm text-slate-400">
+            <li><a class="focus-ring rounded-md hover:text-white" href="#expertise">Expertise</a></li>
+            <li><a class="focus-ring rounded-md hover:text-white" href="#technologies">Technologies</a></li>
+            <li><a class="focus-ring rounded-md hover:text-white" href="#processus">Valeur ajoutée</a></li>
+            <li><a class="focus-ring rounded-md hover:text-white" href="#parcours">Parcours</a></li>
+            <li><a class="focus-ring rounded-md hover:text-white" href="#apropos">À propos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-sm font-bold text-white">Légal</h2>
+          <ul class="mt-4 space-y-2 text-sm text-slate-400">
+            <li><a class="focus-ring rounded-md hover:text-white" href="/mentions-legales.html">Mentions légales</a></li>
+            <li><a class="focus-ring rounded-md hover:text-white" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-sm font-bold text-white">Réseaux</h2>
+          <ul class="mt-4 space-y-2 text-sm text-slate-400">
+            <li><a class="focus-ring rounded-md hover:text-white" href="https://www.linkedin.com/" rel="noreferrer">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-shell mt-8 border-t border-slate-900 pt-6 text-xs text-slate-500">
+        © 2026 GCG Prime. Tous droits réservés.
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
